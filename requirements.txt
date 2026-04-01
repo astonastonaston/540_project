@@ -1,0 +1,10 @@
+# Core LLM client
+openai>=1.30.0
+
+# ManiSkill simulation (GPU-accelerated tabletop manipulation)
+# Install separately: pip install mani-skill
+# Full install guide: https://maniskill.readthedocs.io/en/latest/user_guide/getting_started/installation.html
+mani-skill
+
+# Optional: load .env files for OPENAI_API_KEY
+python-dotenv>=1.0.0
