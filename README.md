@@ -271,7 +271,7 @@ pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex main.tex
 
 ---
 
-## Controller Integration (Tom)
+## Controller Integration
 
 See `controller/README.md` for full details on adding your code.
 
