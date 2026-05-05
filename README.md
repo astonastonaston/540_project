@@ -1,6 +1,6 @@
 # Red-Teaming the Robot: Automated Violation Synthesis for Safety-Critical Robotic Systems
 
-**CMSC 540 Final Project — Spring 2026**
+**COSC 540 Final Project — Spring 2026**
 **Team:** Nan Xiao · Tom Olesch · Qipan Xu 
 
 ---
@@ -304,6 +304,6 @@ Each validated scenario JSON has this structure:
             for Safety-Critical Robotic Systems},
   author = {Xiao, Nan and Xu, Qipan and Olesch, Tom},
   year   = {2026},
-  note   = {CMSC 540 Final Project, University of Maryland}
+  note   = {COSC 540 Final Project, University of Maryland}
 }
 ```
