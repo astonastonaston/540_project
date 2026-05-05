@@ -1,0 +1,252 @@
+[
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.079 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.000 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.078 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.066 m < minimum separation 0.073 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.020 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+# Copy this file to api_key.py and fill in your real keys
+# NEVER commit api_key.py to git (it is already in .gitignore)
+
+OPENAI_API_KEY = "sk-..."           # Get from https://platform.openai.com/api-keys
+ANTHROPIC_API_KEY = "sk-ant-..."    # Get from https://console.anthropic.com/settings/keys

@@ -1,0 +1,182 @@
+[
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.102 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.089 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.036 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.114 m). Initial state may cause immediate collision.",
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Red and blue cubes overlap at initialisation (centre distance 0.028 m < 0.05 m). Scenario is physically infeasible."
+    ],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.049 m < minimum separation 0.055 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.045 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.111 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.119 m). Initial state may cause immediate collision.",
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.045 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  }
+]

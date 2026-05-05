@@ -1,0 +1,172 @@
+[
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+    ]
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.099 m < minimum separation 0.100 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.040 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Obstacle is extremely close to 'object_pose_xyz' (distance 0.103 m). Initial state may cause immediate collision."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Object and goal are nearly coincident (distance 0.000 m). Task is trivially solved \u2014 not an effective adversarial scenario."
+    ]
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "valid": false,
+    "errors": [
+      "Obstacle physically overlaps 'object_pose_xyz': centre distance 0.089 m < minimum separation 0.090 m. Scenario is physically infeasible at initialisation."
+    ],
+    "warnings": []
+  },
+  {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  }
+]

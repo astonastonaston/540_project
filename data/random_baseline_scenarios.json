@@ -1,0 +1,1042 @@
+[
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_b9b56fa9",
+      "task": "PickCube-v1",
+      "target_constraint": "collision_avoidance",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.3877,
+          -0.2375,
+          0.0183
+        ],
+        "obstacle_pose_xyz": [
+          0.1782,
+          0.123,
+          0.1353
+        ],
+        "obstacle_size": 0.136,
+        "object_mass": 0.2652,
+        "sensor_noise": 0.0844,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897176Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_ea3100a4",
+      "task": "PickCube-v1",
+      "target_constraint": "joint_limit_violation",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.1984,
+          0.0027,
+          0.0108
+        ],
+        "obstacle_pose_xyz": [
+          0.1675,
+          0.0779,
+          0.109
+        ],
+        "obstacle_size": 0.0487,
+        "object_mass": 1.2196,
+        "sensor_noise": 0.1619,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897194Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_d972cbb2",
+      "task": "PickCube-v1",
+      "target_constraint": "max_ee_speed",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.4142,
+          -0.0799,
+          0.0147
+        ],
+        "obstacle_pose_xyz": [
+          0.5012,
+          -0.085,
+          0.0185
+        ],
+        "obstacle_size": 0.0326,
+        "object_mass": 1.7102,
+        "sensor_noise": 0.1207,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897204Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_3d29bbf8",
+      "task": "PickCube-v1",
+      "target_constraint": "joint_limit_violation",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.3413,
+          0.2366,
+          0.0214
+        ],
+        "obstacle_pose_xyz": [
+          0.3229,
+          0.1713,
+          0.1237
+        ],
+        "obstacle_size": 0.132,
+        "object_mass": 1.197,
+        "sensor_noise": 0.1409,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897211Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_f3d3c74e",
+      "task": "PickCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.4479,
+          0.2426,
+          0.0357
+        ],
+        "obstacle_pose_xyz": [
+          0.4613,
+          -0.0623,
+          0.0907
+        ],
+        "obstacle_size": 0.1284,
+        "object_mass": 0.409,
+        "sensor_noise": 0.0711,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897218Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_7e41e210",
+      "task": "PickCube-v1",
+      "target_constraint": "grasp_force_limit",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.4158,
+          0.0918,
+          0.0121
+        ],
+        "obstacle_pose_xyz": [
+          0.3594,
+          0.0178,
+          0.049
+        ],
+        "obstacle_size": 0.0801,
+        "object_mass": 0.6129,
+        "sensor_noise": 0.1851,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897225Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_de19bf6b",
+      "task": "PickCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.1988,
+          -0.0879,
+          0.033
+        ],
+        "obstacle_pose_xyz": [
+          0.1046,
+          0.1673,
+          0.161
+        ],
+        "obstacle_size": 0.0722,
+        "object_mass": 0.2258,
+        "sensor_noise": 0.1826,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897232Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_a38dc5e9",
+      "task": "PickCube-v1",
+      "target_constraint": "grasp_force_limit",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.1957,
+          -0.0004,
+          0.0365
+        ],
+        "obstacle_pose_xyz": [
+          0.3629,
+          -0.1857,
+          0.0279
+        ],
+        "obstacle_size": 0.1168,
+        "object_mass": 1.1241,
+        "sensor_noise": 0.1494,
+        "lighting": "normal"
+      },
+      "generated_at": "2026-04-23T00:23:24.897238Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_5e28b986",
+      "task": "PickCube-v1",
+      "target_constraint": "grasp_force_limit",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.2797,
+          -0.1403,
+          0.0399
+        ],
+        "obstacle_pose_xyz": [
+          0.3042,
+          -0.2127,
+          0.0094
+        ],
+        "obstacle_size": 0.0343,
+        "object_mass": 1.2921,
+        "sensor_noise": 0.1584,
+        "lighting": "normal"
+      },
+      "generated_at": "2026-04-23T00:23:24.897244Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pickcube_v1_66f4c556",
+      "task": "PickCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.1286,
+          -0.0592,
+          0.0399
+        ],
+        "obstacle_pose_xyz": [
+          0.3128,
+          0.245,
+          0.1722
+        ],
+        "obstacle_size": 0.0215,
+        "object_mass": 1.4694,
+        "sensor_noise": 0.1363,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897251Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_df745a48",
+      "task": "PushCube-v1",
+      "target_constraint": "joint_limit_violation",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.3921,
+          -0.0767,
+          0.0188
+        ],
+        "goal_pose_xyz": [
+          0.1664,
+          -0.2583,
+          0.0317
+        ],
+        "obstacle_pose_xyz": [
+          0.3967,
+          0.2454,
+          0.1372
+        ],
+        "obstacle_size": 0.086,
+        "object_mass": 0.2043,
+        "sensor_noise": 0.1251,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897260Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_7aa924e6",
+      "task": "PushCube-v1",
+      "target_constraint": "joint_limit_violation",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.1581,
+          0.126,
+          0.0262
+        ],
+        "goal_pose_xyz": [
+          0.427,
+          0.0158,
+          0.01
+        ],
+        "obstacle_pose_xyz": [
+          0.2226,
+          -0.2499,
+          0.1672
+        ],
+        "obstacle_size": 0.1342,
+        "object_mass": 1.2559,
+        "sensor_noise": 0.0615,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897267Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_dbe816d9",
+      "task": "PushCube-v1",
+      "target_constraint": "joint_limit_violation",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.4336,
+          0.2145,
+          0.0126
+        ],
+        "goal_pose_xyz": [
+          0.3041,
+          -0.224,
+          0.0328
+        ],
+        "obstacle_pose_xyz": [
+          0.417,
+          -0.1932,
+          0.0856
+        ],
+        "obstacle_size": 0.0915,
+        "object_mass": 0.4343,
+        "sensor_noise": 0.1745,
+        "lighting": "normal"
+      },
+      "generated_at": "2026-04-23T00:23:24.897275Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_4f83dfbf",
+      "task": "PushCube-v1",
+      "target_constraint": "joint_limit_violation",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.453,
+          0.1225,
+          0.0307
+        ],
+        "goal_pose_xyz": [
+          0.3994,
+          -0.0525,
+          0.0302
+        ],
+        "obstacle_pose_xyz": [
+          0.2443,
+          0.2078,
+          0.0813
+        ],
+        "obstacle_size": 0.0522,
+        "object_mass": 0.1428,
+        "sensor_noise": 0.0042,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897282Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_10df22d7",
+      "task": "PushCube-v1",
+      "target_constraint": "max_ee_speed",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.3236,
+          -0.2365,
+          0.0312
+        ],
+        "goal_pose_xyz": [
+          0.1247,
+          -0.225,
+          0.0109
+        ],
+        "obstacle_pose_xyz": [
+          0.2254,
+          0.0074,
+          0.0501
+        ],
+        "obstacle_size": 0.0831,
+        "object_mass": 0.8319,
+        "sensor_noise": 0.1447,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897288Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_c86c038b",
+      "task": "PushCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.1923,
+          -0.013,
+          0.0222
+        ],
+        "goal_pose_xyz": [
+          0.1396,
+          0.0827,
+          0.0206
+        ],
+        "obstacle_pose_xyz": [
+          0.2609,
+          0.1892,
+          0.0098
+        ],
+        "obstacle_size": 0.1049,
+        "object_mass": 0.987,
+        "sensor_noise": 0.0121,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897296Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_b9b8a6d3",
+      "task": "PushCube-v1",
+      "target_constraint": "collision_avoidance",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.4042,
+          -0.1876,
+          0.0157
+        ],
+        "goal_pose_xyz": [
+          0.3252,
+          -0.1871,
+          0.0155
+        ],
+        "obstacle_pose_xyz": [
+          0.2836,
+          0.1947,
+          0.0136
+        ],
+        "obstacle_size": 0.125,
+        "object_mass": 1.2912,
+        "sensor_noise": 0.0196,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897303Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_37b7b751",
+      "task": "PushCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.4682,
+          0.2047,
+          0.0355
+        ],
+        "goal_pose_xyz": [
+          0.1699,
+          -0.0075,
+          0.0164
+        ],
+        "obstacle_pose_xyz": [
+          0.2565,
+          -0.2295,
+          0.0682
+        ],
+        "obstacle_size": 0.1481,
+        "object_mass": 0.4345,
+        "sensor_noise": 0.1568,
+        "lighting": "normal"
+      },
+      "generated_at": "2026-04-23T00:23:24.897310Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_e320420f",
+      "task": "PushCube-v1",
+      "target_constraint": "max_ee_speed",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.2607,
+          0.2195,
+          0.0399
+        ],
+        "goal_pose_xyz": [
+          0.3334,
+          0.1136,
+          0.0146
+        ],
+        "obstacle_pose_xyz": [
+          0.2106,
+          0.2437,
+          0.1043
+        ],
+        "obstacle_size": 0.0905,
+        "object_mass": 1.1346,
+        "sensor_noise": 0.0114,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897317Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "Obstacle is extremely close to 'object_pose_xyz' (distance 0.085 m). Initial state may cause immediate collision."
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_pushcube_v1_88ac64cd",
+      "task": "PushCube-v1",
+      "target_constraint": "collision_avoidance",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "object_pose_xyz": [
+          0.2911,
+          0.1693,
+          0.0147
+        ],
+        "goal_pose_xyz": [
+          0.5035,
+          -0.2183,
+          0.0156
+        ],
+        "obstacle_pose_xyz": [
+          0.3418,
+          0.0911,
+          0.0423
+        ],
+        "obstacle_size": 0.0356,
+        "object_mass": 1.3409,
+        "sensor_noise": 0.0492,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897324Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_0468ecc3",
+      "task": "StackCube-v1",
+      "target_constraint": "collision_avoidance",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.3278,
+          -0.0388,
+          0.0275
+        ],
+        "blue_cube_pose_xyz": [
+          0.2891,
+          0.2087,
+          0.0161
+        ],
+        "obstacle_pose_xyz": [
+          0.3951,
+          -0.1359,
+          0.0792
+        ],
+        "obstacle_size": 0.1073,
+        "object_mass": 0.485,
+        "sensor_noise": 0.0632,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897333Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_3d027370",
+      "task": "StackCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.2633,
+          0.2393,
+          0.0399
+        ],
+        "blue_cube_pose_xyz": [
+          0.1093,
+          -0.1377,
+          0.018
+        ],
+        "obstacle_pose_xyz": [
+          0.4906,
+          0.198,
+          0.1759
+        ],
+        "obstacle_size": 0.068,
+        "object_mass": 0.2787,
+        "sensor_noise": 0.1667,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897340Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "High sensor noise (>0.15 m) combined with dim lighting may render the scenario degenerate \u2014 perception is essentially random."
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_376adb14",
+      "task": "StackCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.3247,
+          0.2339,
+          0.0296
+        ],
+        "blue_cube_pose_xyz": [
+          0.0831,
+          0.1522,
+          0.019
+        ],
+        "obstacle_pose_xyz": [
+          0.3719,
+          0.2282,
+          0.0269
+        ],
+        "obstacle_size": 0.035,
+        "object_mass": 0.2052,
+        "sensor_noise": 0.1106,
+        "lighting": "normal"
+      },
+      "generated_at": "2026-04-23T00:23:24.897347Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "Obstacle is extremely close to 'red_cube_pose_xyz' (distance 0.048 m). Initial state may cause immediate collision."
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_ab77ad34",
+      "task": "StackCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.3219,
+          0.1045,
+          0.0161
+        ],
+        "blue_cube_pose_xyz": [
+          0.3337,
+          -0.1133,
+          0.0247
+        ],
+        "obstacle_pose_xyz": [
+          0.4783,
+          0.18,
+          0.0185
+        ],
+        "obstacle_size": 0.0751,
+        "object_mass": 0.4512,
+        "sensor_noise": 0.0007,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897354Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_34fb57d3",
+      "task": "StackCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.1446,
+          -0.0279,
+          0.0312
+        ],
+        "blue_cube_pose_xyz": [
+          0.3044,
+          -0.1863,
+          0.0384
+        ],
+        "obstacle_pose_xyz": [
+          0.384,
+          -0.1825,
+          0.0072
+        ],
+        "obstacle_size": 0.068,
+        "object_mass": 0.8512,
+        "sensor_noise": 0.086,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897361Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_6dbf5985",
+      "task": "StackCube-v1",
+      "target_constraint": "joint_limit_violation",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.2259,
+          0.2079,
+          0.0392
+        ],
+        "blue_cube_pose_xyz": [
+          0.096,
+          -0.0683,
+          0.0305
+        ],
+        "obstacle_pose_xyz": [
+          0.3735,
+          -0.0761,
+          0.112
+        ],
+        "obstacle_size": 0.1337,
+        "object_mass": 1.4621,
+        "sensor_noise": 0.1499,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897369Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_7817de30",
+      "task": "StackCube-v1",
+      "target_constraint": "max_ee_speed",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.4705,
+          0.1492,
+          0.0364
+        ],
+        "blue_cube_pose_xyz": [
+          0.0899,
+          0.1136,
+          0.02
+        ],
+        "obstacle_pose_xyz": [
+          0.4896,
+          0.1572,
+          0.1728
+        ],
+        "obstacle_size": 0.1254,
+        "object_mass": 0.4369,
+        "sensor_noise": 0.1575,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897376Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_11d60906",
+      "task": "StackCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.4289,
+          0.1721,
+          0.0167
+        ],
+        "blue_cube_pose_xyz": [
+          0.4066,
+          -0.0191,
+          0.0192
+        ],
+        "obstacle_pose_xyz": [
+          0.43,
+          -0.1417,
+          0.0047
+        ],
+        "obstacle_size": 0.0451,
+        "object_mass": 0.526,
+        "sensor_noise": 0.1729,
+        "lighting": "normal"
+      },
+      "generated_at": "2026-04-23T00:23:24.897383Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_ce06c477",
+      "task": "StackCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.3366,
+          -0.0482,
+          0.0394
+        ],
+        "blue_cube_pose_xyz": [
+          0.2945,
+          0.2108,
+          0.0135
+        ],
+        "obstacle_pose_xyz": [
+          0.507,
+          -0.1671,
+          0.1925
+        ],
+        "obstacle_size": 0.0545,
+        "object_mass": 0.2072,
+        "sensor_noise": 0.0869,
+        "lighting": "dim"
+      },
+      "generated_at": "2026-04-23T00:23:24.897390Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "scenario": {
+      "scenario_id": "rnd_stackcube_v1_92d50e60",
+      "task": "StackCube-v1",
+      "target_constraint": "min_clearance_to_obstacles",
+      "rationale": "Uniformly random baseline scenario (no adversarial strategy).",
+      "parameters": {
+        "red_cube_pose_xyz": [
+          0.2546,
+          0.2324,
+          0.0135
+        ],
+        "blue_cube_pose_xyz": [
+          0.4398,
+          -0.1488,
+          0.0113
+        ],
+        "obstacle_pose_xyz": [
+          0.2719,
+          0.0104,
+          0.1613
+        ],
+        "obstacle_size": 0.1093,
+        "object_mass": 1.4134,
+        "sensor_noise": 0.1474,
+        "lighting": "bright"
+      },
+      "generated_at": "2026-04-23T00:23:24.897397Z",
+      "model": "random_baseline"
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]
