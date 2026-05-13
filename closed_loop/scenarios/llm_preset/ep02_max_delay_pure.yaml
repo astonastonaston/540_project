@@ -1,0 +1,13 @@
+name: ep02_max_delay_pure
+strategy: "Pure delay attack: 10-step control delay means the repulsive correction is computed from 0.5s-stale state — by the time it fires the EE is already inside the safety margin"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 10
+  gain_scale: 1.0

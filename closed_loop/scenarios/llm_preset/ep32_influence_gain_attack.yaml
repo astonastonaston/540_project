@@ -1,0 +1,14 @@
+name: ep32_influence_gain_attack
+strategy: "Tiny influence range plus high gain — the attractive force is dominant until the very last moment, when the late-firing repulsive field cannot redirect the EE in time"
+
+ee_start:
+  y: -0.45
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.9
+  influence_distance: 0.02

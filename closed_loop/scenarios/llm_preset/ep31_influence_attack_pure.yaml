@@ -1,0 +1,14 @@
+name: ep31_influence_attack_pure
+strategy: "Shrink the repulsive field's range to its minimum so it doesn't activate until the EE is already 1cm from the wall — by then there is no time to brake before breaching the 5cm safety margin"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.0
+  influence_distance: 0.01

@@ -1,0 +1,14 @@
+name: ep21_compound_max
+strategy: "All four adversarial axes pushed to near-maximum — broadest attack surface; expected to trigger multiple constraint types in a single episode"
+
+ee_start:
+  y: -0.55
+
+sensor_noise:
+  ee_position_std: 0.028
+  joint_position_std: 0.009
+
+control:
+  delay_steps: 9
+  gain_scale: 1.9
+  influence_distance: 0.02

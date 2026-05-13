@@ -1,0 +1,13 @@
+name: ep28_jacobian_target
+strategy: "Targeted at Jacobian degradation: extreme far start (config far from rest) plus max joint noise; the linear approximation breaks down most severely in stretched configurations"
+
+ee_start:
+  y: -0.68
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.010
+
+control:
+  delay_steps: 0
+  gain_scale: 1.5

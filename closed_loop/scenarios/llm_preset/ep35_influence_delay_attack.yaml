@@ -1,0 +1,14 @@
+name: ep35_influence_delay_attack
+strategy: "Small influence range plus max delay — repulsion fires both narrowly and stale; the controller has neither room nor time to react before the EE crosses the margin"
+
+ee_start:
+  y: -0.45
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 10
+  gain_scale: 1.3
+  influence_distance: 0.025

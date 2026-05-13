@@ -1,0 +1,13 @@
+name: ep08_gain_joint_noise
+strategy: "High gain amplifies Jacobian errors from noisy joint readings — large desired Cartesian deltas get mapped along incorrect joint directions, producing high joint velocities and possible limit violations"
+
+ee_start:
+  y: -0.50
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.008
+
+control:
+  delay_steps: 0
+  gain_scale: 1.7

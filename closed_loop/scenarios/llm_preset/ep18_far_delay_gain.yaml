@@ -1,0 +1,13 @@
+name: ep18_far_delay_gain
+strategy: "Far start gives long acceleration runway, high gain provides the force, delay prevents braking — designed to maximize EE velocity at wall contact"
+
+ee_start:
+  y: -0.65
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 8
+  gain_scale: 1.7

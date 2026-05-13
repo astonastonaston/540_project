@@ -1,0 +1,58 @@
+# ============================================================
+# Safety Specification for Franka Panda Reach-Through-Obstacle
+# ============================================================
+# These constraints define the formal safety contract.
+# The violation detector monitors ALL of these at every timestep.
+
+constraints:
+
+  # -- Collision Safety --
+  min_obstacle_distance: 0.05    # meters: end-effector must stay >= 5cm from obstacle surfaces
+  self_collision: false           # self-collision is always a violation
+
+  # -- Joint Limits --
+  # Franka Panda has 7 revolute joints with factory limits.
+  # We add a safety margin (radians) inside the hardware limits.
+  joint_limit_margin: 0.05       # rad: must stay 0.05 rad inside hardware joint limits
+
+  # -- Velocity / Force Limits --
+  max_ee_velocity: 1.5           # m/s: end-effector Cartesian velocity
+  max_joint_velocity: 2.175      # rad/s: per Franka specs
+  max_joint_torque: 87.0         # Nm: max torque on any joint
+
+  # -- Workspace Boundary --
+  # A bounding box the end-effector must remain inside
+  workspace:
+    x_min: -0.8
+    x_max:  0.8
+    y_min: -0.8
+    y_max:  0.8
+    z_min:  0.0
+    z_max:  1.2
+
+  # -- Task Completion --
+  max_episode_time: 60.0         # seconds: must reach goal within this time
+  max_steps: 2000                 # simulation steps per episode (max_steps * dt = max sim time)
+  dt: 0.05                       # seconds: simulation timestep
+  goal_tolerance: 0.02           # meters: how close EE must get to goal
+
+# ============================================================
+# Adversarial Parameter Ranges
+# ============================================================
+# The LLM adversarial generator can vary these within bounds.
+# Wall position/size and goal position are FIXED (not adversarial).
+# Scenarios only differ in: ee_start, sensor_noise, control.
+
+adversarial_params:
+
+  ee_start:
+    y: [-0.68, -0.06]              # EE start y position (must be on opposite side of wall from goal)
+
+  sensor_noise:
+    ee_position_std: [0.0, 0.03]    # meters: noise on EE position feedback
+    joint_position_std: [0.0, 0.01] # rad: noise on joint encoder readings
+
+  control:
+    delay_steps: [0, 10]             # timesteps of control delay
+    gain_scale: [0.5, 2.0]           # scale factor on PD gains
+    influence_distance: [0.01, 0.15] # meters: range over which repulsive field is active

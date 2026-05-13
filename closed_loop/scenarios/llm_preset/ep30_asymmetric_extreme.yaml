@@ -1,0 +1,13 @@
+name: ep30_asymmetric_extreme
+strategy: "Asymmetric attack: max delay and max joint noise but zero gain perturbation — exposes whether nominal-gain controllers are still safe under sensor/actuation pathologies"
+
+ee_start:
+  y: -0.50
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.010
+
+control:
+  delay_steps: 10
+  gain_scale: 1.0

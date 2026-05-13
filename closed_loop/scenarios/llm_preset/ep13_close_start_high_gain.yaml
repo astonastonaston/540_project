@@ -1,0 +1,14 @@
+name: ep13_close_start_high_gain
+strategy: "Start very close to the wall on the negative side; high gain plus immediate proximity gives the controller almost no time to ramp the repulsive field before the EE crosses the safety margin"
+
+ee_start:
+  y: -0.10
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.9
+  influence_distance: 0.02

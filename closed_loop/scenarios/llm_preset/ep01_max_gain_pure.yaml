@@ -1,0 +1,13 @@
+name: ep01_max_gain_pure
+strategy: "Pure max-gain attack: with gain_scale at the upper bound, the attractive PD force overwhelms the repulsive field near the wall and the EE penetrates the 2cm safety margin before repulsion can correct"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 2.0

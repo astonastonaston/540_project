@@ -1,0 +1,14 @@
+name: ep06_gain_delay_combo
+strategy: "High gain plus moderate delay — the EE accelerates aggressively toward the goal and the delayed repulsion cannot brake fast enough; momentum carries it past the wall safety margin"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 8
+  gain_scale: 1.8
+  influence_distance: 0.03

@@ -1,0 +1,13 @@
+name: ep25_velocity_target
+strategy: "Targeted at max_ee_velocity (1.5 m/s): max gain and far start give a long unobstructed acceleration window before the wall enters repulsive range"
+
+ee_start:
+  y: -0.68
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 2.0

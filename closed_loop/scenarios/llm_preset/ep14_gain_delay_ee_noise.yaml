@@ -1,0 +1,14 @@
+name: ep14_gain_delay_ee_noise
+strategy: "Triple stack: high gain (fast motion) + delay (late reaction) + EE noise (corrupted distance). Each individually subthreshold, but compounded errors exceed safety margin"
+
+ee_start:
+  y: -0.45
+
+sensor_noise:
+  ee_position_std: 0.020
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 6
+  gain_scale: 1.6
+  influence_distance: 0.04

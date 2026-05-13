@@ -1,0 +1,13 @@
+name: ep17_delay_both_noise
+strategy: "Delay + both noise sources at moderate gain — controller fights stale, dual-corrupted state; emphasizes that delay alone exposes noise that would otherwise average out"
+
+ee_start:
+  y: -0.45
+
+sensor_noise:
+  ee_position_std: 0.020
+  joint_position_std: 0.007
+
+control:
+  delay_steps: 7
+  gain_scale: 1.0

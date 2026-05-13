@@ -1,0 +1,13 @@
+name: jacobian_corruption_attack
+strategy: "Max joint-encoder noise corrupts the Jacobian computed from qpos — Cartesian deltas map to wrong joint deltas, especially far from rest"
+
+ee_start:
+  y: -0.65
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.01
+
+control:
+  delay_steps: 0
+  gain_scale: 1.5
