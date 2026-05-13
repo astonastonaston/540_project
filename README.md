@@ -313,7 +313,7 @@ full data in [`closed_loop/study_output/comparison_summary.csv`](closed_loop/stu
 Root-cause attribution across LLM-induced violations: control 50 %,
 planning 38 %, perception 12 %.
 
-<video src="assets/reachgoal_task_successful.mp4" controls width="100%"></video>
+https://github.com/astonastonaston/540_project/raw/main/assets/reachgoal_task_successful.mp4
 
 *Clean baseline rollout of ReachGoal — the controller climbs the wall and
 reaches the goal with zero safety violations
