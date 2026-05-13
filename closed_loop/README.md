@@ -91,10 +91,10 @@ controller parameters and the EE start position are adversarial, which
 isolates the controller's behaviour as the system under test.
 The clean baseline reaches the goal in ~600 steps with zero violations:
 
-https://github.com/astonastonaston/540_project/raw/main/assets/reachgoal_task_successful.mp4
+![Clean baseline rollout of ReachGoal](../assets/reachgoal_task_successful.gif)
 
-*Clean baseline rollout
-([download](../assets/reachgoal_task_successful.mp4))*
+*Clean baseline rollout — full-quality
+[MP4 download](../assets/reachgoal_task_successful.mp4).*
 
 ```
 EE start         wall          goal
