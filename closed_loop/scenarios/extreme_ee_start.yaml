@@ -1,0 +1,13 @@
+name: extreme_ee_start
+strategy: "Start at the extreme negative y limit — long approach amplifies Jacobian degradation and cumulative tracking error before reaching the wall"
+
+ee_start:
+  y: -0.68
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.0

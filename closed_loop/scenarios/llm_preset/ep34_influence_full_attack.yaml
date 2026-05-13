@@ -1,0 +1,14 @@
+name: ep34_influence_full_attack
+strategy: "All five adversarial axes engaged with focus on collapsed influence range — designed to maximize obstacle_proximity violations specifically"
+
+ee_start:
+  y: -0.50
+
+sensor_noise:
+  ee_position_std: 0.020
+  joint_position_std: 0.006
+
+control:
+  delay_steps: 7
+  gain_scale: 1.8
+  influence_distance: 0.015

@@ -1,0 +1,14 @@
+name: ep24_close_full_combo
+strategy: "Close start with all four axes engaged — minimizes time available for any feedback loop to converge before EE crosses the safety boundary"
+
+ee_start:
+  y: -0.12
+
+sensor_noise:
+  ee_position_std: 0.020
+  joint_position_std: 0.005
+
+control:
+  delay_steps: 4
+  gain_scale: 1.7
+  influence_distance: 0.03

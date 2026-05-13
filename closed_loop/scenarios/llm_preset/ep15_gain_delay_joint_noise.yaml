@@ -1,0 +1,13 @@
+name: ep15_gain_delay_joint_noise
+strategy: "High gain + delay + Jacobian corruption — the joint command magnitude is amplified, latency-shifted, and pointed in wrong directions; targets joint_velocity and joint_limit constraints"
+
+ee_start:
+  y: -0.55
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.007
+
+control:
+  delay_steps: 6
+  gain_scale: 1.6

@@ -1,0 +1,14 @@
+name: ep26_proximity_target
+strategy: "Targeted at min_obstacle_distance: max gain plus delay so the EE arrives at the wall fast and the repulsion fires too late to prevent the 2cm breach"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 9
+  gain_scale: 2.0
+  influence_distance: 0.01

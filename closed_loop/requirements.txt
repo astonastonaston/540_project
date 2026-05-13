@@ -1,0 +1,7 @@
+mani_skill==3.0.0b22
+torch>=2.0.0
+numpy>=1.24.0
+sapien>=3.0.0
+pyyaml>=6.0
+anthropic>=0.30.0
+gymnasium>=0.29.0

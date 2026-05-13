@@ -1,0 +1,14 @@
+name: ep20_close_combo
+strategy: "Start near wall + moderate-everything attack — the controller has very little time and degraded inputs; even sub-extreme parameter values should compound into a violation"
+
+ee_start:
+  y: -0.10
+
+sensor_noise:
+  ee_position_std: 0.015
+  joint_position_std: 0.005
+
+control:
+  delay_steps: 5
+  gain_scale: 1.5
+  influence_distance: 0.03

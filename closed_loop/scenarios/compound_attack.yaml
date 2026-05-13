@@ -1,0 +1,13 @@
+name: compound_attack
+strategy: "Combine all attack surfaces — sensor noise + control delay + high gain — to stack errors and trigger multiple constraint types in one episode"
+
+ee_start:
+  y: -0.55
+
+sensor_noise:
+  ee_position_std: 0.025
+  joint_position_std: 0.008
+
+control:
+  delay_steps: 8
+  gain_scale: 1.8

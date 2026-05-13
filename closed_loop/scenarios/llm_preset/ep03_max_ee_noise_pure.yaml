@@ -1,0 +1,13 @@
+name: ep03_max_ee_noise_pure
+strategy: "Maximum EE position noise corrupts the obstacle distance estimate; repulsion magnitude becomes random near the wall, occasionally insufficient to prevent contact"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.03
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.0

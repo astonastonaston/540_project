@@ -1,0 +1,13 @@
+name: ep12_far_start_high_gain
+strategy: "Far start position lets the attractive force build up large EE velocity over the long approach; by the time the wall is in repulsive range, momentum exceeds what repulsion can dissipate"
+
+ee_start:
+  y: -0.65
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.9

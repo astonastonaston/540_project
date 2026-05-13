@@ -1,0 +1,13 @@
+name: ep19_far_ee_noise_gain
+strategy: "Far start + high gain + EE noise — long approach amplifies the cumulative effect of perception errors, biasing the trajectory off-center before any repulsion engages"
+
+ee_start:
+  y: -0.60
+
+sensor_noise:
+  ee_position_std: 0.025
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.7

@@ -1,0 +1,13 @@
+name: obstacle_proximity_test
+strategy: "High gain + zero delay overwhelms repulsive field, driving EE into obstacle"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 2.0

@@ -1,0 +1,13 @@
+name: ep09_delay_ee_noise
+strategy: "Delayed control plus noisy EE position — the controller reacts to stale, noisy state; corrections aim at where the EE was several steps ago, not where it is now"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.025
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 8
+  gain_scale: 1.0

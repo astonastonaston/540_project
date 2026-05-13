@@ -1,0 +1,13 @@
+name: timeout_violation
+strategy: "Min gain + max delay — arm moves too slowly and reacts too late to ever reach the goal within max_episode_time, triggering a timeout violation"
+
+ee_start:
+  y: -0.65
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 10
+  gain_scale: 0.5

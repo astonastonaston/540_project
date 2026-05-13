@@ -1,0 +1,13 @@
+name: ep27_perception_target
+strategy: "Targeted at perception subsystem: max EE noise and small delay so noisy distance readings inform stale repulsion decisions — should be attributed to perception by the analyzer"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.030
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 3
+  gain_scale: 1.2

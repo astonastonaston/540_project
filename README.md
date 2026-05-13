@@ -13,13 +13,21 @@ red-team agent: given a task description and parameter schema, it produces envir
 configurations (object positions, obstacle geometry, sensor noise, lighting, mass) that
 are specifically chosen to maximise the probability that a safety constraint is violated.
 
-We compare four LLM back-ends (GPT-4o, GPT-4o-mini, Claude Sonnet 4.6, Claude Haiku 4.5),
-three prompt engineering strategies (standard, enhanced, self-correction), and a
-random-uniform baseline across nine evaluation metrics.
+The framework has two evaluation arms.
+An **offline arm** (this directory) scores generated scenarios analytically across five
+ManiSkill3 tabletop tasks — comparing four LLM back-ends (GPT-4o, GPT-4o-mini,
+Claude Sonnet 4.6, Claude Haiku 4.5), three prompt engineering strategies (standard,
+enhanced, self-correction), and a random-uniform baseline across nine evaluation metrics.
+A **closed-loop arm** ([`closed_loop/`](closed_loop/)) rolls validated scenarios out
+against a Franka Panda controller in ManiSkill3 simulation and records ground-truth
+safety violations.
 
-**Key result:** Claude Sonnet 4.6 achieves 100% scenario validity and the highest Adversarial
-Quality Score (AQS = 0.789). LLM-generated scenarios trigger real safety violations at
-~30% rate versus 0% for random baselines in closed-loop simulation.
+**Key results:**
+- *Offline arm:* Claude Sonnet 4.6 achieves 100% scenario validity and the highest
+  Adversarial Quality Score (AQS = 0.789).
+- *Closed-loop arm:* LLM-generated scenarios trigger real safety violations in **34.3%**
+  of episodes (95% CI [0.200, 0.486]) versus **0%** for the random baseline over 100
+  episodes on ReachGoal.
 
 ---
 
@@ -66,7 +74,11 @@ Quality Score (AQS = 0.789). LLM-generated scenarios trigger real safety violati
 │
 ├── run_all.sh                # Convenience wrapper: runs both experiments end-to-end
 │
-├── controller/               # Tom's controller code (see controller/README.md)
+├── closed_loop/              # Closed-loop ReachGoal evaluation arm
+│                             #   custom ManiSkill3 env + PD/waypoint/potential-field controller
+│                             #   safety monitor + root-cause analyser
+│                             #   LLM-vs-random rollouts + results
+│                             #   (see closed_loop/README.md)
 │
 ├── data/                     # Committed dataset — validated scenario JSONs
 │   ├── multi_llm/            #   one file per LLM config (7 configs × 30 scenarios)
@@ -264,35 +276,51 @@ python run_multi_llm_experiment.py --n 6
 # 4. Re-draw figures only (no API calls, uses saved results)
 python run_multi_llm_experiment.py --figs-only
 
-# 5. Compile report PDF
+# 5. (Optional) Reproduce the closed-loop arm — ManiSkill3 rollouts
+cd closed_loop
+pip install -r requirements.txt          # adds ManiSkill3 + gymnasium
+python run_comparison_study.py           # 35 LLM + 100 random ReachGoal rollouts
+cd ..
+
+# 6. Compile report PDF
 cd report
 pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex main.tex
 ```
 
 ---
 
-## Controller Integration
+## Closed-Loop Arm
 
-See `controller/README.md` for full details on adding your code.
+[`closed_loop/`](closed_loop/) contains the second evaluation arm of the
+framework: a custom **ReachGoal** task in ManiSkill3, a PD + waypoint +
+potential-field controller as the system under test, a runtime safety monitor
+that checks seven constraints every simulation step, and a deterministic
+root-cause analyser that attributes each violation to perception, planning,
+or control. The arm exposes six controller-specific adversarial knobs (EE
+start, EE-position noise, joint-encoder noise, control delay, gain scale,
+potential-field influence distance) and rolls validated scenarios out
+against the controller to record ground-truth violations.
 
-Each validated scenario JSON has this structure:
-```json
-{
-  "scenario_id": "abc123",
-  "task": "PickCube-v1",
-  "target_constraint": "collision_avoidance",
-  "parameters": {
-    "object_pose_xyz": [0.44, 0.18, 0.02],
-    "obstacle_pose_xyz": [0.24, 0.09, 0.15],
-    "obstacle_size": 0.12,
-    "object_mass": 1.8,
-    "sensor_noise": 0.14,
-    "lighting": "dim"
-  },
-  "valid": true,
-  "aqs": 0.812
-}
-```
+**Headline numbers** (35 LLM scenarios vs. 100 random, on ReachGoal —
+full data in [`closed_loop/study_output/comparison_summary.csv`](closed_loop/study_output/comparison_summary.csv)):
+
+| Metric                    | LLM (n=35)                       | Random (n=100) |
+|---------------------------|----------------------------------|----------------|
+| Violation rate            | **34.3 %** (95 % CI [0.20, 0.49])| 0.0 %          |
+| Goal-reach rate           | 45.7 %                           | 96.0 %         |
+| Mean violations / episode | 14.46                            | 0.00           |
+
+Root-cause attribution across LLM-induced violations: control 50 %,
+planning 38 %, perception 12 %.
+
+<video src="assets/reachgoal_task_successful.mp4" controls width="100%"></video>
+
+*Clean baseline rollout of ReachGoal — the controller climbs the wall and
+reaches the goal with zero safety violations
+([download](assets/reachgoal_task_successful.mp4)).*
+
+See [`closed_loop/README.md`](closed_loop/README.md) for the scenario YAML
+format and how to run the experiments.
 
 ---
 
@@ -304,6 +332,6 @@ Each validated scenario JSON has this structure:
             for Safety-Critical Robotic Systems},
   author = {Xiao, Nan and Xu, Qipan and Olesch, Tom},
   year   = {2026},
-  note   = {COSC 540 Final Project, University of Maryland}
+  note   = {COSC 540 Final Project, University of Tennessee, Knoxville}
 }
 ```

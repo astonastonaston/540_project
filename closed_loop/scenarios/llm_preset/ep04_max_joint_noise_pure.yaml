@@ -1,0 +1,13 @@
+name: ep04_max_joint_noise_pure
+strategy: "Maximum joint encoder noise corrupts the Jacobian computed from qpos — the Cartesian-to-joint mapping rotates the desired EE delta into wrong directions, especially in elbow-out configurations"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.01
+
+control:
+  delay_steps: 0
+  gain_scale: 1.0

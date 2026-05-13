@@ -1,0 +1,13 @@
+name: ep22_compound_balanced
+strategy: "Mid-range values across all four axes — tests whether moderate degradation across the entire stack is enough to violate even without any single dominant attacker parameter"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.015
+  joint_position_std: 0.005
+
+control:
+  delay_steps: 5
+  gain_scale: 1.5

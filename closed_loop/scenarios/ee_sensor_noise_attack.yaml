@@ -1,0 +1,13 @@
+name: ee_sensor_noise_attack
+strategy: "Max EE position noise corrupts the obstacle distance estimate — repulsion fires with wrong magnitude/direction near the wall"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.03
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.5

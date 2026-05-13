@@ -1,0 +1,13 @@
+name: ep29_stealth
+strategy: "Stealth attack: every parameter only mildly perturbed from baseline — tests whether the controller is robust to any deviation, or only obvious adversarial inputs"
+
+ee_start:
+  y: -0.42
+
+sensor_noise:
+  ee_position_std: 0.008
+  joint_position_std: 0.003
+
+control:
+  delay_steps: 2
+  gain_scale: 1.2

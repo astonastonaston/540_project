@@ -1,0 +1,18 @@
+metric,llm,random
+episodes,35,100
+violation_rate,0.3429,0.0000
+violation_rate_ci_95,"[0.200, 0.486]","[0.000, 0.000]"
+goal_reach_rate,0.4571,0.9600
+mean_violations_per_episode,14.457,0.000
+ttf_seconds_mean,5.542,n/a
+ttf_seconds_median,4.650,n/a
+rate_obstacle_proximity,0.3429,0.0000
+rate_ee_velocity_exceeded,0.0286,0.0000
+rate_joint_velocity_exceeded,0.0000,0.0000
+rate_joint_limit_low,0.0000,0.0000
+rate_joint_limit_high,0.0000,0.0000
+rate_workspace_boundary,0.0000,0.0000
+rate_timeout,0.0000,0.0000
+subsystem_perception,0.1186,0.0000
+subsystem_control,0.5000,0.0000
+subsystem_planning,0.3814,0.0000

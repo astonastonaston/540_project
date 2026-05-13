@@ -1,0 +1,14 @@
+name: no_violations_baseline
+strategy: "Clean run — no noise, no delay, low gain for safe traversal"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.0
+  influence_distance: 0.03

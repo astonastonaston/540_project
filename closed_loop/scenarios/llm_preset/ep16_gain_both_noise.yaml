@@ -1,0 +1,13 @@
+name: ep16_gain_both_noise
+strategy: "High gain plus both noise sources but no delay — pure perception attack with amplified consequences; targets obstacle_proximity through bad distance estimates and bad Jacobian directions simultaneously"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.020
+  joint_position_std: 0.007
+
+control:
+  delay_steps: 0
+  gain_scale: 1.6

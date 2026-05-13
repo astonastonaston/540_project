@@ -1,0 +1,13 @@
+name: ep23_far_full_combo
+strategy: "Far start with all four axes engaged — uses the long approach to accumulate state error, then arrives at the wall with cascading errors across perception, control, and Jacobian"
+
+ee_start:
+  y: -0.65
+
+sensor_noise:
+  ee_position_std: 0.020
+  joint_position_std: 0.007
+
+control:
+  delay_steps: 7
+  gain_scale: 1.6

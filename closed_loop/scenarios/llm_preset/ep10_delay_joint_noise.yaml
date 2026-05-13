@@ -1,0 +1,13 @@
+name: ep10_delay_joint_noise
+strategy: "Delayed control plus joint noise — Jacobian is wrong AND its outputs are stale; combined error exceeds either alone, especially during the climb-to-reach transition where direction changes"
+
+ee_start:
+  y: -0.45
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.008
+
+control:
+  delay_steps: 8
+  gain_scale: 1.0

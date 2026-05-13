@@ -1,0 +1,13 @@
+name: ep07_gain_ee_noise
+strategy: "High gain amplifies the effect of noisy distance readings — repulsive force magnitude swings wildly between under- and over-correction, producing erratic trajectories near the wall"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.025
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 0
+  gain_scale: 1.7

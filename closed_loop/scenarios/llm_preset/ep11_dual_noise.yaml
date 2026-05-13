@@ -1,0 +1,13 @@
+name: ep11_dual_noise
+strategy: "Both noise sources at near-max levels — perception of EE position and joint configuration are both corrupted, so attractive direction, repulsive direction, and Jacobian mapping all degrade together"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.025
+  joint_position_std: 0.008
+
+control:
+  delay_steps: 0
+  gain_scale: 1.0

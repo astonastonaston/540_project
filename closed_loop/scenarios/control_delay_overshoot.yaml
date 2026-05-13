@@ -1,0 +1,13 @@
+name: control_delay_overshoot
+strategy: "Maxed control delay — the repulsive field reacts too late, EE momentum carries it past the 2cm safety margin"
+
+ee_start:
+  y: -0.40
+
+sensor_noise:
+  ee_position_std: 0.0
+  joint_position_std: 0.0
+
+control:
+  delay_steps: 10
+  gain_scale: 1.5
